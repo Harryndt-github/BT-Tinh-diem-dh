@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tính điểm ĐH khối D</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        #div1 {
+            width: 100%;
+            height: 100%;
+            background-color: #f2f2f2;
+        }
+        #from {
+            width: 100%;
+            height: 100%;
+            background-color: #f2f;
+        }
+        #table {
+           border-collapse: collapse;
+           border-spacing: 5px 1em;
+           front-width: 650;
+        }
+        #table td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: center;
+        }
+        #p1 {
+            color: red;
+        }
+    </style>
+
+    <body>
+        <div>
+            <h2>Tính điểm ĐH khối D</h2>
+            <from action="" id="from">
+                <tr>
+                    <td>Môn Toán</td>
+                    <td><input id="math" type="text" name="literature" size="10"/></td>
+                    <td>Môn Văn</td>
+                    <td><input id="literature" type="text" name="literature" size="10"/></td>
+                    <td>Môn Anh</td>
+                    <td><input id="english" type="text" name="english" size="10"/></td>
+                </tr>
+                <td>Khu vực</td>
+                <td><select name="Khuvuc" id="Khuvuc">
+                    <option value="KV1">Khu vực 1</option>
+                    <option value="KV2">Khu vực 2</option>
+                    <option value="KV2-NT">Khu vực 2 - NT</option>
+                    <option value="KV3">Khu vực 3</option>
+                </select> </td>
+                </tr>
+                </table>
+                <br>
+                <button type="button" id="btn">Tính điểm</button>
+                <br><br>
+                <p id="p1"></p>
+            </from>
+        </div>
+        <script src="main.js"></script>
+    </body>
